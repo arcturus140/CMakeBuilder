@@ -539,7 +539,7 @@ class CmakeInfo:
             self.__data = {"build_folder": default}
         self.unexpanded_build_folder = self.__get_val("build_folder")  # type: str
         self.__data = expand(window, self.__data)
-        self.build_folder = self.__get_val("build_folder")  # type: str
+        self.build_folder = self.__get_val("build_folder", default='')  # type: str
         self.working_dir = self.__get_val("root_folder")  # type: str
         if self.working_dir:
             self.working_dir = realpath(self.working_dir)

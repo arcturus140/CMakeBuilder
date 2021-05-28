@@ -47,7 +47,7 @@ dictionary accepts the following keys:
 * `build_folder` [required string]
 
   A string pointing to the directory where you want to build the project. A
-  good first choice is `$folder/build`.
+  good first choice is `$folder/build`. When the build folder is not set the plugin tries to set it to `$folder/build`.
 
 * `command_line_overrides` [optional dictionary]
 
